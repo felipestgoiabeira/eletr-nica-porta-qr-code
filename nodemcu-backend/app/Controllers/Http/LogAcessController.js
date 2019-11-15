@@ -4,6 +4,7 @@
 /** @typedef {import('@adonisjs/framework/src/Response')} Response */
 /** @typedef {import('@adonisjs/framework/src/View')} View */
 
+const Log = use('App/Models/LogAcess')
 /**
  * Resourceful controller for interacting with logacesses
  */
@@ -18,6 +19,10 @@ class LogAcessController {
    * @param {View} ctx.view
    */
   async index ({ request, response, view }) {
+   const logs =  await Log.query()
+      .with("user")
+      .fetch();
+    return logs;
   }
 
   /**

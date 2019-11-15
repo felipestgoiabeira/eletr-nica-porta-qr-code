@@ -1,22 +1,69 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+
+}
+html, body, #root {
+    min-height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
+body{
+  -webkit-font-smoothing: antialisied !important ;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+form, body, input button{
+  font-family: 'Roboto', Arial, Helvetica, sans-serif
+}
+
+.containerFrame{
+  margin: 10px auto 0;
+  max-width: 1200px;
+  width: 100%;
+ 
+}
+.contentFrame{
+  margin: 30px;
+  width: 100% ;
+  background: #FFF;
+  border-radius: 4px;
+  padding: 30px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+.content button.btn{
+  border : 0;
+  border-radius: 2px;
+  width: 30%;
+  height: 42px;
+  padding:  0 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background: #0273b4;
+  color: #fff;
+  cursor: pointer;
+}
+
+.content button.btn:hover{
+  background: #005586;
+}
+
+
+.menu-item{
+  margin-left:0%;
+  margin-top: 2%;
+}
+
+@media only screen and (min-width: 1200px){}
+.ui.menu {
+    width: 1127px;
+    margin-left: auto !important;
+    margin-right: auto !important;}
+
+.header{
+  margin:40px;
 }
